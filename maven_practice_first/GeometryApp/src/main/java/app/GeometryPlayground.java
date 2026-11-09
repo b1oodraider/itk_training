@@ -3,6 +3,7 @@ package app;
 import Figures.Circle;
 import Figures.Rectangle;
 import Figures.Triangle;
+import GeometryUtils.TriangleUtils;
 
 public class GeometryPlayground {
     public static void main(String[] args) {
@@ -16,5 +17,7 @@ public class GeometryPlayground {
                 triangle.area(), triangle.perimeter(),
                 rectangle.area(), rectangle.perimeter(),
                 circle.area(), circle.perimeter());
+
+        System.out.println(TriangleUtils.getTriangle(5,12,13).area());
     }
 }
