@@ -3,8 +3,8 @@ package GeometryUtils;
 import Figures.Triangle;
 
 public class TriangleUtils {
-    public static Triangle getTriangle(double a, double b, double c) {
-        return new Triangle(a, b, c);
+    public static Triangle getTriangle(double a, double b) {
+        return new Triangle(a, b, Math.sqrt(a*a + b*b));
     }
 
     public static int compareTrianglesAreas(Triangle a, Triangle b) {
