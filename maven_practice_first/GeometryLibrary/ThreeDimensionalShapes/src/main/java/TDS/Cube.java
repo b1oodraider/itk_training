@@ -6,6 +6,7 @@ public class Cube {
         this.dimension = dimension;
     }
 
+    @Deprecated
     public double getArea() {
         return dimension * dimension + dimension * dimension + dimension * dimension
                 + dimension * dimension + dimension * dimension + dimension * dimension;
@@ -17,5 +18,9 @@ public class Cube {
 
     public double perimeter() {
         return dimension * 12;
+    }
+
+    public double fullArea() {
+        return dimension * dimension * 6;
     }
 }
