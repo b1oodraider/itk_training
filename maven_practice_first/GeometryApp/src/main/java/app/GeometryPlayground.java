@@ -4,6 +4,7 @@ import Figures.Circle;
 import Figures.Rectangle;
 import Figures.Triangle;
 import GeometryUtils.TriangleUtils;
+import TDS.Cube;
 
 public class GeometryPlayground {
     public static void main(String[] args) {
@@ -19,5 +20,6 @@ public class GeometryPlayground {
                 circle.area(), circle.perimeter());
 
         System.out.println(TriangleUtils.getTriangle(5,12).area());
+        System.out.println(new Cube(3.3).getArea());
     }
 }
