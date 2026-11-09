@@ -20,6 +20,6 @@ public class GeometryPlayground {
                 circle.area(), circle.perimeter());
 
         System.out.println(TriangleUtils.getTriangle(5,12).area());
-        System.out.println(new Cube(3.3).getArea());
+        System.out.println(new Cube(3.3).fullArea());
     }
 }
