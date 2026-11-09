@@ -3,7 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>itk.learn</groupId>
   <artifactId>GeometryLibrary</artifactId>
-  <version>1.1.0</version>
-  <name>Archetype - Figures</name>
+  <version>2.1.0</version>
+  <name>GeometryLibrary</name>
   <url>http://maven.apache.org</url>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>GeometryCore</module>
+    <module>GeometryUtils</module>
+    <module>ThreeDimensionalShapes</module>
+  </modules>
+
 </project>
