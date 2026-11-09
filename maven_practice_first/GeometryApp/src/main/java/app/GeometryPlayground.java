@@ -18,6 +18,6 @@ public class GeometryPlayground {
                 rectangle.area(), rectangle.perimeter(),
                 circle.area(), circle.perimeter());
 
-        System.out.println(TriangleUtils.getTriangle(5,12,13).area());
+        System.out.println(TriangleUtils.getTriangle(5,12).area());
     }
 }
