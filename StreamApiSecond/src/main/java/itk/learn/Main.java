@@ -15,9 +15,8 @@ public class Main {
                 new Student("Student4", Map.of("Physics", 78, "Chemistry", 85))
         );
 
-        Map<String, Integer> res = students.parallelStream().flatMap(e -> e.getGrades().entrySet().stream())
-                .collect(Collectors.groupingBy( Map.Entry::getKey, Collectors.mapping(Map.Entry::getValue, Collectors.toList())))
-                .entrySet().stream().collect(Collectors.toMap(Map.Entry::getKey, e->e.getValue().stream().mapToInt(Integer::intValue).sum() / e.getValue().size()));
+        Map<String, Double> res = students.parallelStream().flatMap(e -> e.getGrades().entrySet().stream())
+                .collect(Collectors.groupingBy( Map.Entry::getKey, Collectors.averagingInt(Map.Entry::getValue)));
         System.out.println(res);
     }
 }
